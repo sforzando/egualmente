@@ -1,0 +1,37 @@
+{
+  "name": "egualmente",
+  "version": "1.0.0",
+  "description": "A minimal Electron Kiosk Browser written with Typescript",
+  "main": "dist/main.js",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "build": "electron-builder --mac --x64",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "tsc && electron ./dist/main.js"
+  },
+  "build": {
+    "productName": "egualmente",
+    "appId": "jp.co.sforzando.egualmente",
+    "mac": {
+      "icon": "build/icons/Instagram.icns",
+      "target": "dmg"
+    },
+    "directories": {
+      "output": "build"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sforzando/egualmente.git"
+  },
+  "keywords": ["Electron", "typescript"],
+  "author": "sforzando LLC.",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^2.0.2",
+    "electron-builder": "^20.15.1",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  }
+}

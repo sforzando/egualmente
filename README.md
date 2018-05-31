@@ -17,3 +17,6 @@ $ npm start
 ```shell
 $ npm run build
 ```
+
+`build/egualmente-1.0.0.dmg` is the installer.
+Mount it and deploy `egualmente.app` to `/Applications`.

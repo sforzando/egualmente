@@ -1,6 +1,12 @@
 import { app, BrowserWindow } from 'electron';
 import * as path from 'path';
+import * as fs from 'fs';
 
+let settings = { url: 'https://www.instagram.com/explore/tags/awebpage/' };
+const settings_path = path.join(
+  app.getPath('desktop'),
+  'egualmente_settings.json'
+);
 let mainWindow: Electron.BrowserWindow;
 
 function createWindow() {
@@ -18,10 +24,10 @@ function createWindow() {
 
   // and load the index.html of the app.
   // mainWindow.loadFile(path.join(__dirname, "../index.html"));
-  mainWindow.loadURL('https://www.instagram.com/explore/tags/awebpage/');
+  mainWindow.loadURL(settings.url);
   mainWindow.webContents.on('did-finish-load', () => {
     mainWindow.webContents.insertCSS(
-      'html,body{ cursor: none;}::-webkit-scrollbar {display: none;}'
+      'html,body{cursor: none;}::-webkit-scrollbar {display: none;}'
     );
   });
 

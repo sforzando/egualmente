@@ -25,7 +25,10 @@
     "type": "git",
     "url": "git+https://github.com/sforzando/egualmente.git"
   },
-  "keywords": ["Electron", "typescript"],
+  "keywords": [
+    "Electron",
+    "typescript"
+  ],
   "author": "sforzando LLC.",
   "license": "MIT",
   "devDependencies": {

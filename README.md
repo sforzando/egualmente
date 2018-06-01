@@ -1,5 +1,7 @@
 # egualmente
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sforzando/egualmente.svg)](https://greenkeeper.io/)
+
 ## How to Develop
 
 ```shell
